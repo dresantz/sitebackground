@@ -5,68 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Background</title>
-    <style>
-body {
-    background-color: black;
-    background-image: url(images/BackgroundChaves2.png);
-    height: 100vh;
-    /*contain (ruim), cover (imagem acaba)*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-attachment: fixed;
-    margin: 2%;
-    /* Shorthand - Background
-color > imagem > position > repeat > [size] > attachment
-    */
-}
-div#tex {
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 20px;
-    margin: auto;
-    min-width: 240px;
-    max-width: 650px;
-    text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
-}
-div#tex h1 {
-    text-align: center;
-}
 
-div#conteiner {
- background-color: green;
- height: 200px;
- width: 200px;
- margin: 20px;
- border-radius: 10px;
- padding: 10px;
- /**/
- position: relative;
-}
-div#conteudo {
-background-color: red;
-height: 100px;
-width: 100px;
-border: 10px solid black;
-/*move o eixo da imagem para o centro do relativo*/
-position: absolute;
-top: 50%;
-left: 50%;
-/*move a imagem em relação ao eixo, por isso negativo*/
-transform: translate(-50%, -50%);
-}
+    
+    <style>
+        @font-face {
+            font-family: 'Teste';
+            src: url(fonts/LeagueGothic.ttf);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: black url(images/janela.jpg) no-repeat fixed;
+        }
+        header {
+            background-color: black;
+            height: 400px;
+            color: white;
+            font-family: 'Teste';
+            font-size: 80px;
+        }
+        header h1 {
+            letter-spacing: 4px;
+            margin-left: 5%;
+            padding-top: 66px;
+        }
+        header p {
+            font-size: 60px;
+            margin-left: 30%;
+            margin-top: 86px;
+        }
+    /*primeiros parágrafos*/
+        section {
+            position: relative;
+        }
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-90%, -50%);
+        }
+        section p {
+            font-family: 'Teste';
+            font-size: 8vw;
+        }
+        section#text1 {
+            background-color: white;
+            height: 80vw;
+            
+        }
+        section#text2 {
+            background-color: transparent;
+            color: white;
+            height: 70vw;
+
+        }
+        section#text3 {
+            background-color: white;
+            height: 120vw;
+        }
+        section#text4 {
+            background-color: transparent;
+            color: white;
+            height: 110vw;
+        }
+        section#text5 {
+            background-color: white;
+            height: 70vw;
+        }
+
     </style>
 </head>
 <body>
-    <div id="tex">
-        <h1> Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quaerat repudiandae omnis sequi alias quod soluta fuga, magnam totam ipsa. Ipsum suscipit distinctio quam dolorem id animi exercitationem optio vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem eum commodi debitis impedit qui quis. Deserunt, mollitia ad harum voluptatem labore quod quibusdam maiores, obcaecati incidunt similique aliquam, at reiciendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor suscipit molestiae animi earum nisi illo saepe nemo quasi omnis maxime, optio, ex debitis. Libero cumque quisquam nihil dolorum labore expedita?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quaerat repudiandae omnis sequi alias quod soluta fuga, magnam totam ipsa. Ipsum suscipit distinctio quam dolorem id animi exercitationem optio vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem eum commodi debitis impedit qui quis. Deserunt, mollitia ad harum voluptatem labore quod quibusdam maiores, obcaecati incidunt similique aliquam, at reiciendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor suscipit molestiae animi earum nisi illo saepe nemo quasi omnis maxime, optio, ex debitis. Libero cumque quisquam nihil dolorum labore expedita?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quaerat repudiandae omnis sequi alias quod soluta fuga, magnam totam ipsa. Ipsum suscipit distinctio quam dolorem id animi exercitationem optio vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem eum commodi debitis impedit qui quis. Deserunt, mollitia ad harum voluptatem labore quod quibusdam maiores, obcaecati incidunt similique aliquam, at reiciendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor suscipit molestiae animi earum nisi illo saepe nemo quasi omnis maxime, optio, ex debitis. Libero cumque quisquam nihil dolorum labore expedita?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quaerat repudiandae omnis sequi alias quod soluta fuga, magnam totam ipsa. Ipsum suscipit distinctio quam dolorem id animi exercitationem optio vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem eum commodi debitis impedit qui quis. Deserunt, mollitia ad harum voluptatem labore quod quibusdam maiores, obcaecati incidunt similique aliquam, at reiciendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor suscipit molestiae animi earum nisi illo saepe nemo quasi omnis maxime, optio, ex debitis. Libero cumque quisquam nihil dolorum labore expedita?</p>
-    </div>
-    <div id="conteiner"><div id="conteudo"></div></div>
+    <header>
+    <h1>Viagem</h1>
+    <p>Giovana Oliveira</p>
+    </header>
+    <section id="text1">
+        <div>
+            <p>tudo me lembra andar</p>
+            <p>de carro</p>
+            <p>a cidade passando como aqueles filmes</p>
+            <p>que eu fazia na escola</p>
+            <p>um em cima</p>
+            <p>  dois rolos</p>
+            <p>um embaixo</p>
+        </div>
+    </section>
+    <br>
+    <section id="text2">
+        <div>
+            <br>
+            <p>nossa história desenhada</p>
+            <p>toda cidade é uma pintura</p>
+            <p>    na janela do carro</p>
+            <p>todo horizonte é uma linha</p>
+        </div>
+    </section>
+    <br>
+    <section id="text3">
+        <div>
+            <p>uma conversa com meu pai</p>
+            <p>uma viagem só pra fazer</p>
+            <p>companhia</p>
+            <p>a gente achou a gasolina</p>
+            <p>muito cara</p>
+            <p>mas tem outro posto</p>
+            <p>logo mais</p>
+            <p>dá pra chegar lá?</p>
+        </div>
+    </section>
+    <br>
+    <section id="text4">
+        <div>
+            <p>talvez o carro seja um</p>
+            <p>elevador um</p>
+            <p>cinema esse</p>
+            <p>espaço compartilhado</p>
+            <p>respiramos o mesmo ar</p>
+            <p>vemos o mesmo filme</p>
+            <p>das pinturas e dos desenhos</p>
+            <p>que a gente enrolava em dois</p>
+            <p>rolos de papel higiênico</p>
+        </div>
+    </section>
+    <br>
+    <section id="text5">
+        <div>
+            <p>eu coloro</p>
+            <p>você desenha</p>
+        </div>
+    </section>
 </body>
 </html>
