@@ -60,7 +60,7 @@ section#text2 {
     color: white;
     height: 70vw;
     text-shadow: 3px 3px 4px black;
-    box-shadow: inset 6px 6px 6px 0px black;
+    box-shadow: inset 10px 10px 30px 25px rgba(0, 0, 0, 0.521);
 }
 section#text3 {
     background-color: white;
@@ -73,11 +73,14 @@ section#text4 {
     color: white;
     height: 120vw;
     text-shadow: 3px 3px 4px black;
-    box-shadow: inset 6px 6px 6px 0px black;
+    box-shadow: inset 10px 10px 30px 25px rgba(0, 0, 0, 0.521);
 }
 section#text5 {
     background-color: white;
     height: 70vw;
+}
+p#caralho {
+    margin-left: 190vw;
 }
 p#foot {
     font-family: Arial, Helvetica, sans-serif;
