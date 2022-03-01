@@ -4,78 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background</title>
-
-    
-    <style>
-        @font-face {
-            font-family: 'Teste';
-            src: url(fonts/LeagueGothic.ttf);
-        }
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            background: black url(images/janela.jpg) no-repeat fixed;
-        }
-        header {
-            background-color: black;
-            height: 400px;
-            color: white;
-            font-family: 'Teste';
-            font-size: 80px;
-        }
-        header h1 {
-            letter-spacing: 4px;
-            margin-left: 5%;
-            padding-top: 66px;
-        }
-        header p {
-            font-size: 60px;
-            margin-left: 30%;
-            margin-top: 86px;
-        }
-    /*primeiros parágrafos*/
-        section {
-            position: relative;
-        }
-        div {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-90%, -50%);
-        }
-        section p {
-            font-family: 'Teste';
-            font-size: 8vw;
-        }
-        section#text1 {
-            background-color: white;
-            height: 80vw;
-            
-        }
-        section#text2 {
-            background-color: transparent;
-            color: white;
-            height: 70vw;
-
-        }
-        section#text3 {
-            background-color: white;
-            height: 120vw;
-        }
-        section#text4 {
-            background-color: transparent;
-            color: white;
-            height: 120vw;
-        }
-        section#text5 {
-            background-color: white;
-            height: 70vw;
-        }
-
-    </style>
+    <title>Viagem</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -88,8 +18,9 @@
             <p>de carro</p>
             <p>a cidade passando como aqueles filmes</p>
             <p>que eu fazia na escola</p>
+            <br>
             <p>um em cima</p>
-            <p>  dois rolos</p>
+            <p class="ident">  dois rolos</p>
             <p>um embaixo</p>
         </div>
     </section>
@@ -99,7 +30,7 @@
             <br>
             <p>nossa história desenhada</p>
             <p>toda cidade é uma pintura</p>
-            <p>    na janela do carro</p>
+            <p class="ident">    na janela do carro</p>
             <p>todo horizonte é uma linha</p>
         </div>
     </section>
@@ -136,6 +67,7 @@
             <p>eu coloro</p>
             <p>você desenha</p>
         </div>
+        <p id="foot">Página criada por Dre Santos</p>
     </section>
 </body>
 </html>
